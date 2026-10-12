@@ -53,9 +53,24 @@ These screenshots show the shipped interface in Chromium with sample data. They 
 
 **Required:** FiveM with OneSync enabled. A supported framework and vehicle-key provider are optional.
 
-1. Download or clone this repository. Create a resource directory named **`dios_protect`** in your server's resources.
-2. Copy `fxmanifest.lua` and the `client`, `config`, `locales`, `server`, `shared` and `web` directories into it. The README, license and `docs` are repository material; the production runtime loads only the manifest-listed files.
-3. Edit [config/config.lua](config/config.lua). Framework and key detection default to `auto`; configure renamed resources in `integration.resources` and `keyResources`.
+```text
+dios-protect/
+|-- dios_protect/        # Ready-to-copy production resource
+|   |-- fxmanifest.lua
+|   |-- client/
+|   |-- config/
+|   |-- locales/
+|   |-- server/
+|   |-- shared/
+|   `-- web/
+|-- docs/                # Guides, installation examples and UI previews
+|-- README.md
+`-- LICENSE
+```
+
+1. Download or clone this repository.
+2. Copy the included **`dios_protect` folder** directly into your server's `resources/[local]/` directory. Keep its name `dios_protect`; no folder assembly is needed. Leave repository documentation outside your server resources.
+3. Edit [dios_protect/config/config.lua](dios_protect/config/config.lua). Framework and key detection default to `auto`; configure renamed resources in `integration.resources` and `keyResources`.
 4. Start your framework and key resources first, then add this to `server.cfg`:
 
    ```cfg
@@ -112,13 +127,13 @@ Command names can be changed in `Protect.commands`.
 
 Automatic framework priority is Falcon → QBox → QBCore → ESX → standalone. Explicit selection is supported. Restart Dios Protect after a core restart to refresh its adapter.
 
-Vehicle-key adapters are included for **QBox, QBCore, Wasabi, Renewed, MrNewb, ZRX, Jaksam, Quasar, Codesign, okok, T1ger, MK and both AK47 variants**. Automatic mode uses every detected provider; with no provider, native doors are unlocked without requiring a plate. Custom integrations live in [config/integration.lua](config/integration.lua).
+Vehicle-key adapters are included for **QBox, QBCore, Wasabi, Renewed, MrNewb, ZRX, Jaksam, Quasar, Codesign, okok, T1ger, MK and both AK47 variants**. Automatic mode uses every detected provider; with no provider, native doors are unlocked without requiring a plate. Custom integrations live in [dios_protect/config/integration.lua](dios_protect/config/integration.lua).
 
 See [vehicle-key integration details](docs/KEYS.md) for resource names, API expectations and verification limitations. Provider versions differ; test entry, locking, unlocking and re-entry with your installed resources.
 
 ## Configuration
 
-[config/config.lua](config/config.lua) groups access, jobs, UI branding, guard models, vehicle catalogs, driving behavior, performance and tactical settings. Change the language with `Protect.locale`: `en`, `es`, `nl`, `de` or `hi`.
+[dios_protect/config/config.lua](dios_protect/config/config.lua) groups access, jobs, UI branding, guard models, vehicle catalogs, driving behavior, performance and tactical settings. Change the language with `Protect.locale`: `en`, `es`, `nl`, `de` or `hi`.
 
 The default foot supervisor runs every 50 ms. Moving slots use bounded velocity/turn prediction; NPCs still navigate through the game world. Guards and drivers are tasked only by their current network owner. Formation movement does not use teleports or rigid attachments.
 
