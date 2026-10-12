@@ -1,0 +1,62 @@
+@media (max-width: 1400px), (max-height: 800px) {
+    .dashboard { width: 92vw; height: 90vh; }
+    .topbar { min-height: 70px; padding: 15px 22px; }
+    .sidebar { width: 174px; padding-top: 20px; }
+    .sidebar > .eyebrow { margin-bottom: 14px; }
+    .nav-item { padding: 10px; min-height: 42px; font-size: 12px; }
+    .page { padding: 22px; }
+    .page-heading { margin-bottom: 18px; }
+    .surface { padding: 18px; }
+    .dashboard-footer { min-height: 86px; padding: 12px 22px; }
+    .formation-diagram { height: 210px; }
+    .metrics { gap: 8px; }
+    .metric { padding: 12px; }
+    .vehicle-toolbar { top: -22px; }
+    .sticky-summary { bottom: -22px; }
+    .control-panel { top: 5vh; max-height: 90vh; }
+}
+@media (max-width: 1100px) {
+    .sidebar { width: 150px; }
+    .sidebar > .eyebrow { font-size: 9px; }
+    .nav-item { gap: 7px; padding: 9px 7px; }
+    .overview-grid { grid-template-columns: 1fr; }
+    .overview-facts { grid-template-columns: repeat(3, 1fr); }
+    .personnel-grid, .tactical-grid { grid-template-columns: 1fr; }
+    .formation-options { grid-template-columns: repeat(4, 1fr); }
+    .mode-card { min-height: 85px; }
+    .footer-actions > button { padding: 8px 10px; }
+    .footer-actions .icon { display: none; }
+    .assessment { flex-direction: column; gap: 6px; }
+}
+@media (max-width: 800px) {
+    .dashboard { width: 96vw; height: 94vh; }
+    .sidebar { width: 132px; padding-inline: 8px; }
+    .nav-item .icon { display: none; }
+    .topbar-status { gap: 4px; }
+    .brand-lockup p { max-width: 170px; }
+    .brand-lockup strong { font-size: 13px; }
+    .topbar { padding: 12px 16px; gap: 10px; }
+    .page { padding: 18px; }
+    .motorcade-grid, .air-grid, .appointments-grid { grid-template-columns: 1fr; }
+    .manifest-column { border-inline-start: 0; border-top: 1px solid var(--border); padding-inline-start: 0; padding-top: 20px; }
+    .overview-facts { grid-template-columns: 1fr; }
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .dashboard-footer { flex-wrap: wrap; padding: 10px 16px; gap: 8px; }
+    .deployment-summary { flex-basis: 100%; }
+    .deployment-summary .hint { display: none; }
+    .footer-actions { justify-content: flex-start; }
+    .sidebar-bottom { padding-inline: 6px; }
+}
+@media (max-width: 550px) {
+    .sidebar { width: 110px; }
+    .sidebar .eyebrow { display: none; }
+    .mode-grid { grid-template-columns: 1fr; }
+    .count-control { flex-direction: column; align-items: flex-start; }
+    .topbar-status { display: none; }
+    .modal { padding: 22px; }
+    .modal-actions { flex-wrap: wrap; }
+    .modal-actions button { flex: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

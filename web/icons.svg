@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z M8 12l3 3 5-6"/></symbol>
+  <symbol id="principal" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+  <symbol id="person" viewBox="0 0 24 24"><path d="M8 7a4 4 0 1 0 8 0 4 4 0 0 0-8 0 M4 21v-3a8 8 0 0 1 16 0v3"/></symbol>
+  <symbol id="vehicle" viewBox="0 0 24 24"><path d="m4 10 2-6h12l2 6 M3 10h18v8H3z M5 18v3m14-3v3 M6 14h2m8 0h2"/></symbol>
+  <symbol id="air" viewBox="0 0 24 24"><path d="M4 4h16 M12 4v5 M3 12h15l3 3-3 2H8l-3-5-3-3 M8 17v3h10 M11 9h5l2 3 M3 12v5"/></symbol>
+  <symbol id="formation" viewBox="0 0 24 24"><path d="M12 3v4m0 10v4M3 12h4m10 0h4 M10 10h4v4h-4z"/></symbol>
+  <symbol id="appointment" viewBox="0 0 24 24"><path d="M8 3h8v4H8z M8 5H4v16h16V5h-4 M8 12h8m-8 4h5"/></symbol>
+  <symbol id="extraction" viewBox="0 0 24 24"><path d="M4 4h9v16H4z M9 12h12m-4-4 4 4-4 4"/></symbol>
+  <symbol id="warning" viewBox="0 0 24 24"><path d="m12 3 10 18H2z M12 9v5m0 3h.01"/></symbol>
+  <symbol id="waypoint" viewBox="0 0 24 24"><path d="M12 22s8-8 8-14a8 8 0 0 0-16 0c0 6 8 14 8 14 M9 8a3 3 0 1 0 6 0 3 3 0 0 0-6 0"/></symbol>
+  <symbol id="driver" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18 M3 11h18 M12 12v9 M10 12h4v3h-4z"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><path d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14 M15 15l6 6"/></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="hold" viewBox="0 0 24 24"><path d="M7 4h3v16H7z M14 4h3v16h-3z"/></symbol>
+  <symbol id="resume" viewBox="0 0 24 24"><path d="m7 4 13 8-13 8z"/></symbol>
+  <symbol id="regroup" viewBox="0 0 24 24"><path d="M4 10a8 8 0 0 1 14-5l3 3 M21 3v5h-5 M20 14a8 8 0 0 1-14 5l-3-3 M3 21v-5h5"/></symbol>
+  <symbol id="forward" viewBox="0 0 24 24"><path d="M12 3v18m-6-6 6 6 6-6"/></symbol>
+  <symbol id="suit" viewBox="0 0 24 24"><path d="m8 3 4 4 4-4 5 5v13H3V8z M8 3l2 12 2 3 2-3 2-12M12 7v11"/></symbol>
+  <symbol id="target" viewBox="0 0 24 24"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16 M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6 M12 1v5m0 12v5M1 12h5m12 0h5"/></symbol>
+</svg>
